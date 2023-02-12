@@ -1,5 +1,5 @@
 {
-  "homepage":"https://gautam2s0.github.io/",
+  "homepage": "https://gautam2s0.github.io/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -14,11 +14,13 @@
     "framer-motion": "^8.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-download-link": "^2.3.0",
     "react-github-calendar": "^3.1.2",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
+    "react-toastify": "^9.1.1",
     "typewriter-effect": "^2.19.0",
     "web-vitals": "^2.1.4"
   },
@@ -28,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-   "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

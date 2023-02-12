@@ -3,29 +3,19 @@
     margin: 0;
     padding: 0;
 }
+.AboutBox:hover,.AboutImage:hover {
+    box-sizing: border-box;
+    transform: scale(1.08);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.36) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
 .names{
-    width: 80%;
-    margin: auto;
-}
-
-.AboutGrid{
-    display: Grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: space-between;
-    /* align-items: center; */
-    gap: 5%;
-    margin-top: 5%;
-
-}
-.AboutimgBox{
-    width: 30%;
-    margin: auto;
-}
-.AboutimgBox>img{
     width: 100%;
-    border-radius: 50%;
-    
+    margin: auto;
 }
+
+
 .stext{
     width: 120%;
     margin-left: -20%;
@@ -40,7 +30,7 @@
 }
 @media screen and (max-width:600px) {
     .AboutGrid{
-        display: Grid;
+        display: block;
         grid-template-columns: repeat(1,1fr);
         justify-content: space-between;
         align-items: center;

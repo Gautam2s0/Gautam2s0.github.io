@@ -16,7 +16,7 @@ import { Heading } from '@chakra-ui/react';
 
 export const Skills = () => {
   return (
-    <>
+    <Box>
       <Box id="skills" className="section main">
         <Heading className="section__title different" color="#ffff" >
           Skills
@@ -65,6 +65,6 @@ export const Skills = () => {
           </Box>
         </Box>
       </Box>
-    </>
+    </Box>
   );
 };

@@ -4,14 +4,11 @@
     text-align: center;
     background-color: var(--clr-bg);
     height: 70vh;
-    margin-top: -5%;
-    
+    margin-top: -5%;    
   }
   .section__title{
    margin-top: 5%;
     color: #fff;
-   
-    
   }
   
   .techsection > div {
@@ -52,6 +49,7 @@
   @media (max-width: 620px) {
     .techsection {
       height: 120vh;
+      margin-bottom: -20%;
     }
     .techsection > div {
       width: 40%;

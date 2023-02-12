@@ -23,11 +23,29 @@ import {
     MdLocationOn,
     MdOutlineEmail,
   } from 'react-icons/md';
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
   import {BsLinkedin} from "react-icons/bs"
   import { BsGithub, BsPerson } from 'react-icons/bs';
   import {FaHackerrank} from "react-icons/fa"
+import { useState } from 'react';
   
   export default function Contact() {
+    const [name,setName]=useState("")
+    const [email,setEmail]=useState("")
+    const [message,setMessage]=useState('')
+    const notify = () => toast("Message has been send successfully!");
+    const errorMess = () => toast("Please fill all credentials !");
+    const handleClick=()=>{
+      if(name!=="" && email!==""){
+       notify()
+      }
+      else {
+        errorMess()
+      }
+      
+      
+    }
     return (
       <Container bg="transparent" maxW="100%" mt={0} centerContent overflow="hidden"  p="20px 0px">
         <Flex w={"82%"} boxShadow= "rgba(0, 0, 0, 0.35) 0px 5px 15px" borderRadius={"20px"} mb="20px" bg='teal'  >
@@ -136,7 +154,7 @@ import {
                               pointerEvents="none"
                               children={<BsPerson color="gray.800" />}
                             />
-                            <Input type="text" size="md"  />
+                            <Input type="text" size="md" onChange={(e)=>setName(e.target.value)}  />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
@@ -146,7 +164,7 @@ import {
                               pointerEvents="none"
                               children={<MdOutlineEmail color="gray.800" />}
                             />
-                            <Input type="text" size="md" />
+                            <Input type="email" size="md" onChange={(e)=>setEmail(e.target.value)} />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
@@ -157,16 +175,18 @@ import {
                               borderRadius: 'gray.300',
                             }}
                             placeholder="message"
+                            onChange={(e)=>setMessage(e.target.value)}
                           />
                         </FormControl>
                         <FormControl id="name" float="right">
-                          <Button
+                          <Button onClick={handleClick}
                             variant="solid"
                             bg="#0D74FF"
                             color="white"
                             _hover={{}}>
                             Send Message
                           </Button>
+                          <ToastContainer position="top-center" theme="dark"  />
                         </FormControl>
                       </VStack>
                     </Box>
