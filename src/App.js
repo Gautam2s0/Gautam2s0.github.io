@@ -1,24 +1,27 @@
+
 import './App.css';
-import { About } from './Compoments/Pages/About';
-import { Skills } from './Compoments/Pages/Skills';
-import { Project } from './Compoments/Pages/Project';
-import { Contect } from './Compoments/Pages/Contect';
-import {  Github } from './Compoments/Component/Github';
-import Navbar from './Compoments/Pages/Navbar';
-import { Home } from './Compoments/Pages/Home/Home';
+import { About } from './Components/Pages/About/About';
+import { Home } from './Components/Pages/Home/Home';
+import { Skills } from './Components/Pages/Skills/Skills';
+import { Contact } from './Components/Pages/Contact/Contact';
+import { Project } from './Components/Pages/Project/Project';
+import { Navbar } from './Components/Pages/Navbar/Navbar';
+import "./Components//styles/fontstyle.css"
+import { Box } from '@chakra-ui/react';
 
 function App() {
   return (
-    <div className="App" id="app">
-      <div>
+    <div className="App fontStyle">
       <Navbar/>
-      </div>
+      
       <Home/>
       <About/>
       <Skills/>
-      <Github/>
+      <Box  boxSizing="border-box" pb="5%" backgroundColor={"Highlight"} id="project">
       <Project/>
-      <Contect/>
+      </Box>
+      <Contact/>
+      
     </div>
   );
 }

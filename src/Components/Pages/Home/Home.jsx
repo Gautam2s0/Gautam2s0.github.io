@@ -2,7 +2,7 @@ import { ArrowDownIcon } from '@chakra-ui/icons';
 import { Box, Flex, Heading, Link, Stack, Text ,Button} from '@chakra-ui/react'
 import React from 'react'
 import Typewriter from "typewriter-effect";
-import resume from "../../../doc/Gautam Sonkar-resume.pdf"
+import resume from "../../Docs/Gautam Sonkar-resume.pdf"
 export const Home = () => {
   return (
     <Stack className='fontStyle'

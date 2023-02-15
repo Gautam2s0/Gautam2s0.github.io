@@ -1,11 +1,11 @@
 import { Box, Flex, Hide, Show, Spacer, Stack } from '@chakra-ui/react'
 import React from 'react'
-import "../Styles/navbar.css"
+import "../../styles/navbar.css"
 import {Link} from "react-scroll"
 import { useState } from 'react';
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons"
-import resume from "../../doc/Gautam Sonkar-resume.pdf"
-const Navbar = () => {
+import resume from "../../Docs/Gautam Sonkar-resume.pdf"
+export const Navbar = () => {
     const [click, setClick] = useState(false)
     const [display, setDisplay] = useState("none")
     const handleClick = () => {
@@ -73,5 +73,3 @@ const Navbar = () => {
         </Stack>
     )
 }
-
-export default Navbar
