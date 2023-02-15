@@ -37,7 +37,7 @@ export const Home = () => {
           <Box>am</Box>
         </Flex>
         <Heading fontSize={["2rem","5rem"]} color="aqua"  fontWeight={["400","600"]} shadow="lg">Gautam Sonkar</Heading>
-        <Text fontSize={["1rem","1.2rem","1.8rem","2rem"]} fontWeight={["400","500"]}>
+        <Text fontSize={["1rem","1.2rem","1.8rem","2rem"]} fontWeight={["400","500"]} >
         <Typewriter
           style={{ color: "red", lineHeight: "17px" }}
           options={{
