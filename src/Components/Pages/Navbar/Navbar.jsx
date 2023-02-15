@@ -19,9 +19,9 @@ export const Navbar = () => {
             <Flex justifyContent={"space-between"} w="100%" display={["none", "none", "flex", "flex"]}>
                 <Link to="home" smooth={true}>
                     <Flex fontSize={"1.5rem"} align="center" ml="15%" _hover={{color:{sm:"teal",md:"pink",lg:"yellow",xl:"teal"}}}>
-                        <Box color={"red"} fontSize="2rem">G</Box>
+                        <Box color={"red"} fontSize={["2rem","2rem","1.5rem","2rem"]}>G</Box>
                         <Box>autam</Box>
-                        <Box color={"red"} fontSize="2rem">S</Box>
+                        <Box color={"red"} fontSize={["2rem","2rem","1.5rem","2rem"]}>S</Box>
                         <Box>onkar</Box>
                     </Flex>
                 </Link>

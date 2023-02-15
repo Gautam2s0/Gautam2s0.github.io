@@ -14,12 +14,14 @@ export const Home = () => {
       justifyContent={"center"}
       color={"#fff"}
       // backgroundImage={"https://vaibhavraj.netlify.app/static/media/slide1.ce2fa051.jpeg"}
+      // backgroundImage="http://hd.wallpaperswide.com/thumbs/macbook_pro_laptop-t2.jpg"
       backgroundImage="https://static.wixstatic.com/media/c7bef5_d10547d9317e4d33ad36145fb7e6eb1a~mv2.jpg/v1/fill/w_925,h_616,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c7bef5_d10547d9317e4d33ad36145fb7e6eb1a~mv2.jpg"
       backgroundRepeat="no-repeat"
       backgroundSize={"cover"}
       boxSizing="border-box"
       backgroundColor="transparent"
       mt={["4rem","4rem","4rem","-10rem"]}
+      
      
     
       >
@@ -34,7 +36,7 @@ export const Home = () => {
           <Box>I</Box>
           <Box>am</Box>
         </Flex>
-        <Heading fontSize={["2rem","5rem"]} fontWeight={["400","600"]} shadow="lg">Gautam Sonkar</Heading>
+        <Heading fontSize={["2rem","5rem"]} color="aqua"  fontWeight={["400","600"]} shadow="lg">Gautam Sonkar</Heading>
         <Text fontSize={["1rem","1.2rem","1.8rem","2rem"]} fontWeight={["400","500"]}>
         <Typewriter
           style={{ color: "red", lineHeight: "17px" }}
