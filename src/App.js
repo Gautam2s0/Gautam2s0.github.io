@@ -3,9 +3,9 @@ import { About } from './Compoments/Pages/About';
 import { Skills } from './Compoments/Pages/Skills';
 import { Project } from './Compoments/Pages/Project';
 import { Contect } from './Compoments/Pages/Contect';
-import { Home } from './Compoments/Pages/Home';
 import {  Github } from './Compoments/Component/Github';
 import Navbar from './Compoments/Pages/Navbar';
+import { Home } from './Compoments/Pages/Home/Home';
 
 function App() {
   return (
