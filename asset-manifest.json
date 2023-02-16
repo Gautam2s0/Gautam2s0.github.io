@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.6248e17e.css",
-    "main.js": "/static/js/main.cbb2daaf.js",
+    "main.css": "/static/css/main.90abba1d.css",
+    "main.js": "/static/js/main.e03c5bcc.js",
     "static/media/bluefly.png": "/static/media/bluefly.fbd0c7bedcbc79ff798f.png",
-    "static/media/Ainak.png": "/static/media/Ainak.77d915c0bf62e53d03f5.png",
-    "static/media/fabbag.png": "/static/media/fabbag.6fb29fcc2575cf516763.png",
+    "static/media/fabbag.png": "/static/media/fabbag.10d16a1db6ea61b0736d.png",
+    "static/media/Ainak.png": "/static/media/Ainak.30ca1eda6172eed2a9fb.png",
     "static/media/Gautam Sonkar-resume.pdf": "/static/media/Gautam Sonkar-resume.530052075977628cf775.pdf",
     "static/media/Gautam Sonkar.jpeg": "/static/media/Gautam Sonkar.18a7a7136e3b757a5c40.jpeg",
     "index.html": "/index.html",
-    "main.6248e17e.css.map": "/static/css/main.6248e17e.css.map",
-    "main.cbb2daaf.js.map": "/static/js/main.cbb2daaf.js.map"
+    "main.90abba1d.css.map": "/static/css/main.90abba1d.css.map",
+    "main.e03c5bcc.js.map": "/static/js/main.e03c5bcc.js.map"
   },
   "entrypoints": [
-    "static/css/main.6248e17e.css",
-    "static/js/main.cbb2daaf.js"
+    "static/css/main.90abba1d.css",
+    "static/js/main.e03c5bcc.js"
   ]
 }
