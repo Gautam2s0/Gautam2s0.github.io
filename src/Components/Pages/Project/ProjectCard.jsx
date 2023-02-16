@@ -11,8 +11,9 @@ export const ProjectCard = ({img,title,demo,github,desc,language}) => {
   };
 
   return (
-    <Box border={"1px solid"} pb="5%" m="auto" borderRadius="5%" boxSizing="border-box" backgroundColor={"#fff"} h="100%" 
-    _hover={{boxShadow:"rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px"}}
+    <Box border={"transparent"} pb="5%" m="auto" borderRadius="5%" boxSizing="border-box" backgroundColor={"#101010"} color="#ffff" h="100%" 
+    
+    _hover={{backgroundColor:"#202020"}}
     >
       <Stack w="90%" margin={"auto"} justifyContent="center">
         <Box className="ProjectImageBox"   >
@@ -38,7 +39,7 @@ export const ProjectCard = ({img,title,demo,github,desc,language}) => {
           align={"center"}
           pt="5%"
         >
-          <Button w="100%" colorScheme='teal' variant='outline'
+          <Button w="100%" colorScheme='#308D46' variant='outline'
           _hover={{color:"#fff",backgroundColor:"gray.900"}}
             onClick={() => {
               handleClick(demo);
@@ -46,9 +47,9 @@ export const ProjectCard = ({img,title,demo,github,desc,language}) => {
           >
             Demo
           </Button>
-          <Button w="100%" colorScheme='teal' variant='outline'
+          <Button w="100%" colorScheme='#308D46' variant='outline'
           _hover={{color:"#fff",backgroundColor:"gray.900"}}
-            onClick={() => {
+            onClick={() => {   
               handleClick(github);
             }}
           >

@@ -1,6 +1,7 @@
 import { Box, Heading, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import "../../styles/fontstyle.css";
+import { Calender } from "../Github/Calender";
 import { Scard } from "./Scard";
 import {
   language,
@@ -13,90 +14,161 @@ import {
 
 export const Skills = () => {
   return (
-    <Stack  id="skill" className="fontStyle" backgroundColor={"Highlight"} boxSizing="border-box">
-      <Heading  m="3% 0 2% 0"   color="#fff">TECH SKILLS</Heading>
+    <Stack
+      id="skill"
+      className="fontStyle"
+      backgroundColor={"Highlight"}
+      boxSizing="border-box"
+      paddingBottom={["5%", "5%", "0", "0"]}
+    >
+      <Heading m="3% 0 2% 0" color="#fff">
+        TECH SKILLS
+      </Heading>
       <Stack
-      direction={["column","coumn","row","row"]}
-      // spacing={["1%","2%","3%","5%"]}
-      align="top"
-      w={["50%","50%","100%","80%"]}
-      alignSelf="center"
-      justify={["center","center","space-around","space-around"]}
-      
+        direction={["column", "coumn", "row", "row"]}
+        // spacing={["1%","2%","3%","5%"]}
+        align="top"
+        w={["50%", "50%", "100%", "80%"]}
+        alignSelf="center"
+        justify={["center", "center", "space-around", "space-around"]}
       >
-      <Stack className="fronted"  boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"} w={["100%","100%","30%","30%"]} mb="10%" boxSizing="border-box" backgroundColor={"#fff"} 
-       _hover={{boxShadow:" rgba(0, 0, 0, 0.56) 0px 22px 70px 4px"}}
-      >
-        <Heading fontWeight={"500"} fontStyle="oblique" fontFamily={"sans-serif"} fontSize={["2rem"]}  mt="5%" mb="5%">Fontend</Heading>
-        <Stack  
-          spacing={["8%"]}   
-          p="0 0 10% 10%"
+        <Stack
+          className="fronted"
+          boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}
+          w={["100%", "100%", "30%", "30%"]}
+          mb="10%"
+          boxSizing="border-box"
+          backgroundColor={"#fff"}
+          _hover={{ boxShadow: " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
         >
-          {Front.map((el) => {
-            return <Scard {...el} />;
-          })}
-        </Stack>
-      </Stack>
-      <Stack className="BackendHosting" w={["100%","100%","30%","30%"]} >
-        <Stack className="Backend"
-        _hover={{boxShadow:" rgba(0, 0, 0, 0.56) 0px 22px 70px 4px"}}
-        w="100%" boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"} backgroundColor={"#fff"}>
-          <Heading fontWeight={"500"} fontStyle="oblique" fontFamily={"sans-serif"} mt="5%" mb="4%">Backend</Heading>
-          <Stack
-          spacing={["3%"]}
-          p="0 0 8% 10%"
+          <Heading
+            fontWeight={"500"}
+            fontStyle="oblique"
+            fontFamily={"sans-serif"}
+            fontSize={["2rem"]}
+            mt="5%"
+            mb="5%"
           >
-            {backend.map((el) => {
+            Fontend
+          </Heading>
+          <Stack spacing={["8%"]} p="0 0 10% 10%">
+            {Front.map((el) => {
               return <Scard {...el} />;
             })}
           </Stack>
         </Stack>
-        <Stack className="Hosting"
-          _hover={{boxShadow:" rgba(0, 0, 0, 0.56) 0px 22px 70px 4px"}}
-          w="100%" boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"} backgroundColor={"#fff"}>
-          <Heading fontWeight={"500"} fontStyle="oblique" fontFamily={"sans-serif"} fontSize={["2.2rem"]} mt="5%" mb="5%">Hosting Plateforms</Heading>
+        <Stack className="BackendHosting" w={["100%", "100%", "30%", "30%"]}>
           <Stack
-          spacing={["8%"]}
-          p="0 0 10% 10%" 
+            className="Backend"
+            _hover={{ boxShadow: " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
+            w="100%"
+            boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}
+            backgroundColor={"#fff"}
           >
-            {hosting.map((el) => {
-              return <Scard {...el} />;
-            })}
+            <Heading
+              fontWeight={"500"}
+              fontStyle="oblique"
+              fontFamily={"sans-serif"}
+              mt="5%"
+              mb="4%"
+            >
+              Backend
+            </Heading>
+            <Stack spacing={["3%"]} p="0 0 8% 10%">
+              {backend.map((el) => {
+                return <Scard {...el} />;
+              })}
+            </Stack>
           </Stack>
-        </Stack>
-      </Stack>
-      <Stack className="langauegeDabaseVersion" w={["100%","100%","30%","30%"]} >
-        <Stack className="language"
-          _hover={{boxShadow:" rgba(0, 0, 0, 0.56) 0px 22px 70px 4px"}}
-         boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"} w="100%" backgroundColor={"#fff"} >
-          <Heading fontWeight={"500"} fontStyle="oblique" fontFamily={"sans-serif"} mt="5%" mb="5%">Programming Language</Heading>
-          <Stack spacing={["8%"]}
-          p="0 0 10% 10%">{<Scard {...language} />}</Stack>
-        </Stack>
-        <Stack className="database"
-        _hover={{boxShadow:" rgba(0, 0, 0, 0.56) 0px 22px 70px 4px"}}
-         boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"} w="100%" backgroundColor={"#fff"}>
-          <Heading fontWeight={"500"} fontStyle="oblique" fontFamily={"sans-serif"}  mt="5%" mb="5%">DataBase</Heading>
           <Stack
-          spacing={["8%"]}
-          p="0 0 10% 10%"
+            className="Hosting"
+            _hover={{ boxShadow: " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
+            w="100%"
+            boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}
+            backgroundColor={"#fff"}
           >
-            <Scard {...database} />;
+            <Heading
+              fontWeight={"500"}
+              fontStyle="oblique"
+              fontFamily={"sans-serif"}
+              fontSize={["2.2rem"]}
+              mt="5%"
+              mb="5%"
+            >
+              Hosting Plateforms
+            </Heading>
+            <Stack spacing={["8%"]} p="0 0 10% 10%">
+              {hosting.map((el) => {
+                return <Scard {...el} />;
+              })}
+            </Stack>
           </Stack>
         </Stack>
-        <Stack className="version"
-        _hover={{boxShadow:" rgba(0, 0, 0, 0.56) 0px 22px 70px 4px"}}
-         boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"} w="100%" backgroundColor={"#fff"} >
-          <Heading fontWeight={"500"} fontStyle="oblique" fontFamily={"sans-serif"} mt="5%" mb="5%">Version <Text>Control</Text></Heading>
-          <Stack  
-          spacing={["8%"]}
-          p="0% 0% 10% 10%"
+        <Stack
+          className="langauegeDabaseVersion"
+          w={["100%", "100%", "30%", "30%"]}
+        >
+          <Stack
+            className="language"
+            _hover={{ boxShadow: " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
+            boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}
+            w="100%"
+            backgroundColor={"#fff"}
           >
-            <Scard {...version} />;
+            <Heading
+              fontWeight={"500"}
+              fontStyle="oblique"
+              fontFamily={"sans-serif"}
+              mt="5%"
+              mb="5%"
+            >
+              Programming Language
+            </Heading>
+            <Stack spacing={["8%"]} p="0 0 10% 10%">
+              {<Scard {...language} />}
+            </Stack>
+          </Stack>
+          <Stack
+            className="database"
+            _hover={{ boxShadow: " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
+            boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}
+            w="100%"
+            backgroundColor={"#fff"}
+          >
+            <Heading
+              fontWeight={"500"}
+              fontStyle="oblique"
+              fontFamily={"sans-serif"}
+              mt="5%"
+              mb="5%"
+            >
+              DataBase
+            </Heading>
+            <Stack spacing={["8%"]} p="0 0 10% 10%">
+              <Scard {...database} />;
+            </Stack>
+          </Stack>
+          <Stack
+            className="version"
+            _hover={{ boxShadow: " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
+            boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}
+            w="100%"
+            backgroundColor={"#fff"}
+          >
+            <Heading
+              fontWeight={"500"}
+              fontStyle="oblique"
+              fontFamily={"sans-serif"}
+              mt="5%"
+              mb="5%"
+            >
+              Version <Text>Control</Text>
+            </Heading>
+            <Stack spacing={["8%"]} p="0% 0% 10% 10%">
+              <Scard {...version} />;
+            </Stack>
           </Stack>
         </Stack>
-        
-      </Stack>
       </Stack>
     </Stack>
   );
