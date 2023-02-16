@@ -176,6 +176,9 @@ export const Skills = () => {
               fontFamily={"sans-serif"}
               mt="5%"
               mb="5%"
+              borderBottom="2px solid blue"
+            borderRightRadius={"50%"}
+            borderLeftRadius="50%"
             >
               Version <Text>Control</Text>
             </Heading>
