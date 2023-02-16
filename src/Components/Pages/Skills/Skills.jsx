@@ -48,6 +48,9 @@ export const Skills = () => {
             fontSize={["2rem"]}
             mt="5%"
             mb="5%"
+            borderBottom="2px solid blue"
+            borderRightRadius={"50%"}
+            borderLeftRadius="50%"
           >
             Fontend
           </Heading>
@@ -71,6 +74,9 @@ export const Skills = () => {
               fontFamily={"sans-serif"}
               mt="5%"
               mb="4%"
+              borderBottom="2px solid blue"
+            borderRightRadius={"50%"}
+            borderLeftRadius="50%"
             >
               Backend
             </Heading>
@@ -94,6 +100,9 @@ export const Skills = () => {
               fontSize={["2.2rem"]}
               mt="5%"
               mb="5%"
+              borderBottom="2px solid blue"
+            borderRightRadius={"50%"}
+            borderLeftRadius="50%"
             >
               Hosting Plateforms
             </Heading>
@@ -121,6 +130,9 @@ export const Skills = () => {
               fontFamily={"sans-serif"}
               mt="5%"
               mb="5%"
+              borderBottom="2px solid blue"
+            borderRightRadius={"50%"}
+            borderLeftRadius="50%"
             >
               Programming Language
             </Heading>
@@ -141,6 +153,9 @@ export const Skills = () => {
               fontFamily={"sans-serif"}
               mt="5%"
               mb="5%"
+              borderBottom="2px solid blue"
+            borderRightRadius={"50%"}
+            borderLeftRadius="50%"
             >
               DataBase
             </Heading>
