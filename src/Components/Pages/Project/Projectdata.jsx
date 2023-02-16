@@ -1,6 +1,7 @@
 import ainak from "../../images/Ainak.png"
 import bluefly from "../../images/bluefly.png"
 import fabbag from "../../images/fabbag.png"
+import Monster from "../../images/Monster.png"
 import { SiJavascript, SiRedux, SiChakraui, SiReact, SiReactrouter, SiHtml5, SiCss3 } from "react-icons/si";
 import { FaHtml5, FaCss3Alt } from "react-icons/fa";
  const projects=[
@@ -79,11 +80,11 @@ import { FaHtml5, FaCss3Alt } from "react-icons/fa";
           ]
       },
       {
-        img:bluefly,
-        github:"https://github.com/Saiprasaddabbe/Bluefly.com",
-        title:"BlueFly Clone",
+        img:Monster,
+        github:"https://github.com/Abhijeet-abhi/enormous-weight-975",
+        title:"Monster India Clone",
         demo:"https://monsterindias.netlify.app/",
-        desc:" Bluefly is E-commerce shopping app. This was a group project. We have created these website with the help of HTML, CSS And Javascript.",
+        desc:"Monster, has evolved from being a 'job board' to a global provider of everything you need for a successful career. It has been in the pursuit of connecting people with the right job opportunities for over two decades now. ",
         language:[
             {
                 logo: <SiHtml5 />,
