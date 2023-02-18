@@ -55,8 +55,8 @@ export const Skills = () => {
             Fontend
           </Heading>
           <Stack spacing={["8%"]} p="0 0 10% 10%">
-            {Front.map((el) => {
-              return <Scard {...el} />;
+            {Front.map((el,i) => {
+              return <Scard {...el} key={i} />;
             })}
           </Stack>
         </Stack>
@@ -81,8 +81,8 @@ export const Skills = () => {
               Backend
             </Heading>
             <Stack spacing={["3%"]} p="0 0 8% 10%">
-              {backend.map((el) => {
-                return <Scard {...el} />;
+              {backend.map((el,i) => {
+                return <Scard {...el} key={i} />;
               })}
             </Stack>
           </Stack>
@@ -107,8 +107,8 @@ export const Skills = () => {
               Hosting Plateforms
             </Heading>
             <Stack spacing={["8%"]} p="0 0 10% 10%">
-              {hosting.map((el) => {
-                return <Scard {...el} />;
+              {hosting.map((el,i) => {
+                return <Scard {...el} key={i} />;
               })}
             </Stack>
           </Stack>

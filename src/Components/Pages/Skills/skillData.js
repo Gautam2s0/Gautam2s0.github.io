@@ -12,9 +12,11 @@ import {
     SiReact,
     SiExpress,
     SiTypescript,
+    SiCycling74,
   } from "react-icons/si";
   import {DiNodejs} from "react-icons/di"
   import { FaHtml5, FaCss3Alt} from "react-icons/fa"
+import { Image } from "@chakra-ui/react";
 
 const Front = [
     {
@@ -54,11 +56,7 @@ const Front = [
     },
   ];
   const hosting=[
-    {
-      logo: <SiHeroku />,
-      title: "Heroku",
-      color:"purple"
-    },
+    
     {
       logo: <SiVercel />,
       title: "Vercel",
@@ -73,6 +71,11 @@ const Front = [
       logo: <SiNetlify />,
       title: "Netlify",
       color:"aqua"
+    },
+    {
+      logo: <Image src="https://cdn-1.webcatalog.io/catalog/cyclic-sh/cyclic-sh-icon-filled-256.png"width={"3rem"} borderRadius="50%" />,
+      title: "Cyclic",
+      color:"purple"
     },
   ]
 
@@ -92,7 +95,7 @@ const Front = [
 ]
   const version={
     logo: <SiGit />, 
-    title: "Netlify",
+    title: "Git",
     color:"tomato"
   }
   const database={

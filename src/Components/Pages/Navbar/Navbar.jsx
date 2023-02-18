@@ -8,14 +8,27 @@ import resume from "../../Docs/Gautam Sonkar-resume.pdf"
 export const Navbar = () => {
     const [click, setClick] = useState(false)
     const [display, setDisplay] = useState("none")
+    const [color,setColor]=useState(false)
     const handleClick = () => {
         setClick(!click)
         setDisplay(display === "none" ? "flex" : "none")
     }
 
+    const changeColor=()=>{
+        if(window.scrollY>70){
+            setColor(true)
+            console.log(">65")
+        }
+        else{
+            setColor(false)
+        }
+        
+    }
+    window.addEventListener("scroll",changeColor)
+
     return (
 
-        <Stack className='nvabs' direction={['column', 'column', "row", 'row']} w="100%" bg={["blue", "blue", "teal", "black"]} color={["#fff", "yellow", "#fff", "#fff"]} cursor="pointer" h="4rem" position={"fixed"} top="0px" alignItems={"center"} fontFamily="Roboto Mono', monospace">
+        <Stack className='nvabs' direction={['column', 'column', "row", 'row']} w="100%" bg={["blue", "blue", "teal", `${color?"black":"transparent"}`]} color={["#fff", "yellow", "#fff", "#fff"]} cursor="pointer" h="4rem" position={"fixed"} top="0px" alignItems={"center"} fontFamily="Roboto Mono', monospace">
             <Flex justifyContent={"space-between"} w="100%" display={["none", "none", "flex", "flex"]}>
                 <Link to="home" smooth={true}>
                     <Flex fontSize={"1.5rem"} align="center" ml="15%" _hover={{color:{sm:"teal",md:"pink",lg:"yellow",xl:"teal"}}}>

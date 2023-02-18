@@ -11,9 +11,11 @@ export const ProjectCard = ({img,title,demo,github,desc,language}) => {
   };
 
   return (
-    <Box border={"transparent"} pb="5%" m="auto" borderRadius="5%" boxSizing="border-box" backgroundColor={"#101010"} color="#ffff" h="100%" 
+    <Box border={"transparent"}
+    transition="width 2s linear 1s"
+     pb="5%" m="auto" borderRadius="5%" boxSizing="border-box" backgroundColor={"#101010"} color="#ffff" h="100%" 
     
-    _hover={{backgroundColor:"#202020"}}
+    _hover={{backgroundColor:"#202020",width:"105%"}}
     >
       <Stack w="90%" margin={"auto"} justifyContent="center">
         <Box className="ProjectImageBox"   >
@@ -66,9 +68,9 @@ export const ProjectCard = ({img,title,demo,github,desc,language}) => {
           pt="5%"
         >
           {
-            language.map((el)=>{
+            language.map((el,i)=>{
                 return(
-                    <Language {...el}/>
+                    <Language {...el} key={i}/>
                 )
             })
           }

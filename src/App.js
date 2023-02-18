@@ -9,6 +9,7 @@ import { Box } from '@chakra-ui/react'
 import Contact from './Components/Pages/Contact/Contact'
 import Footer from './Components/Pages/Footer/Footer'
 import { Calender } from './Components/Pages/Github/Calender'
+// import { Carosuel } from './Components/Pages/carouser/Carosuel'
 
 function App () {
   return (
@@ -27,6 +28,7 @@ function App () {
       </Box>
       <Contact/>
       <Footer/>
+      {/* <Carosuel/> */}
     </div>
   )
 }

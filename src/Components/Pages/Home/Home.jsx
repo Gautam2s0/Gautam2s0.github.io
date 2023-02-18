@@ -1,9 +1,31 @@
 import { ArrowDownIcon } from '@chakra-ui/icons';
 import { Box, Flex, Heading, Link, Stack, Text ,Button} from '@chakra-ui/react'
-import React from 'react'
+import React, { useState } from 'react'
+import { useEffect } from 'react';
 import Typewriter from "typewriter-effect";
 import resume from "../../Docs/Gautam Sonkar-resume.pdf"
+import { images } from './Image';
 export const Home = () => {
+  let i=0
+  const [src,setSrc]=useState(images[i])
+  const changeIndex=()=>{
+    if(i===images.length-1){
+      i=0
+      setSrc(images[0])
+    }
+    else{
+      i++
+      setSrc(images[i])
+    }
+    return i
+  }
+
+  useEffect(()=>{
+    setInterval(changeIndex,2000)
+
+  },[])
+
+
   return (
     <Stack className='fontStyle'
       id="home"
@@ -13,30 +35,28 @@ export const Home = () => {
       align="center"
       justifyContent={"center"}
       color={"#fff"}
-      // backgroundImage={"https://vaibhavraj.netlify.app/static/media/slide1.ce2fa051.jpeg"}
-      // backgroundImage="http://hd.wallpaperswide.com/thumbs/macbook_pro_laptop-t2.jpg"
-      backgroundImage="https://static.wixstatic.com/media/c7bef5_d10547d9317e4d33ad36145fb7e6eb1a~mv2.jpg/v1/fill/w_925,h_616,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c7bef5_d10547d9317e4d33ad36145fb7e6eb1a~mv2.jpg"
+      backgroundImage={src}
       backgroundRepeat="no-repeat"
       backgroundSize={"cover"}
       boxSizing="border-box"
+      backdropBrightness={"55%"}
+      transition="background "
       backgroundColor="transparent"
-      mt={["4rem","4rem","4rem","-10rem"]}
-      
-     
-    
+      mt={["4rem","4rem","4rem","-9rem"]}
       >
       <Stack
         dir='column'
         display={"flex"}
         justifyContent={"center"}
         align="center"
+        
         >
         <Flex fontSize={["1rem","2rem"]} fontWeight={["400","500"]} gap="20px" >
           <Box>Hi,</Box>
           <Box>I</Box>
           <Box>am</Box>
         </Flex>
-        <Heading fontSize={["2rem","5rem"]} color="aqua"  fontWeight={["400","600"]} shadow="lg">Gautam Sonkar</Heading>
+        <Heading fontSize={["2rem","5rem"]}   fontWeight={["400","600"]} >Gautam Sonkar</Heading>
         <Text fontSize={["1rem","1.2rem","1.8rem","2rem"]} fontWeight={["400","500"]} >
         <Typewriter
           style={{ color: "red", lineHeight: "17px" }}
@@ -49,7 +69,7 @@ export const Home = () => {
         />
         </Text>
         <Stack>
-        <Button rightIcon={<ArrowDownIcon/>} colorScheme='teal' variant='solid' mt='2rem' _hover={{color:"red",bg:"black",shadow:"lg"}} shadow="lg">
+        <Button rightIcon={<ArrowDownIcon/>} colorScheme='teal'  variant='solid' mt='2rem' _hover={{color:"red",bg:"black",shadow:"lg"}} shadow="lg">
           
           <Link href={resume} download="Gautam Sonkar-Resume" colorScheme='teal'  target='_blank' textDecoration={"none"}  _hover={{color:"red",bg:"black"}}>
         Resume
