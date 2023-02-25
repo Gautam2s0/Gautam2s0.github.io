@@ -13,6 +13,10 @@ import {
     SiExpress,
     SiTypescript,
     SiCycling74,
+    SiVisualstudiocode,
+    SiNodemon,
+    SiNpm,
+    SiReactrouter,
   } from "react-icons/si";
   import {DiNodejs} from "react-icons/di"
   import { FaHtml5, FaCss3Alt} from "react-icons/fa"
@@ -54,6 +58,11 @@ const Front = [
       title: "ChakraUI",
       color:"teal"
     },
+    // {
+    //   logo: <SiReactrouter/>,
+    //   title: "React Router",
+    //   color:"tomato"
+    // },
   ];
   const hosting=[
     
@@ -93,11 +102,24 @@ const Front = [
   
 
 ]
-  const version={
-    logo: <SiGit />, 
-    title: "Git",
-    color:"tomato"
-  }
+  const version=[
+    {
+      logo: <SiGit />, 
+      title: "Git",
+      color:"tomato"
+    },
+    {
+      logo: <SiVisualstudiocode />, 
+      title: "VsCode",
+      color:"teal"
+    },
+    // {
+    //   logo: <SiNpm />, 
+    //   title: "Npm",
+    //   color:"navy"
+    // },
+    
+  ]
   const database={
     logo: <SiMongodb />,
     title: "MongoDB",

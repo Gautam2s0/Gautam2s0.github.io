@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, Stack, Box, Flex, Heading } from "@chakra-ui/react";
-import image from "../../Docs/Gautam Sonkar.jpeg";
+import image from "../../images/Gautam Sonkar.png";
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 import { MdLocationPin } from "react-icons/md";
 
@@ -35,7 +35,7 @@ export const About = () => {
       </Box>
       <Box
         justifyContent={"center"}
-        maxW={["80%","80%","40%","40%"]}
+        maxW={["80%","80%","30%","30%"]}
         m="auto"
         boxShadow= "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px"
         borderRadius={"15px"}
@@ -46,17 +46,17 @@ export const About = () => {
         _hover={{boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" ,border:"none"}}
         
       >
-        <Flex gap={"1%"} mb="4%">
+        <Flex gap={"1%"} mb="8%">
           <Box>Hi there! I am</Box>
           <Box fontWeight={"600"} color="blue.600">Gautam Sonkar</Box>
         </Flex>
-        <Box textAlign={"start"} lineHeight={"2rem"}>
+        <Box textAlign={"start"} lineHeight={"2.2rem"}>
           I am currently learning full stack web development at Masai School. I
           am passionate about solving real-world problems and actively looking
           for opportunities in the field of web development and software
           engineering.
         </Box>
-        <Stack
+        {/* <Stack
           dir="column"
           align="center"
           fontStyle={"italic"}
@@ -85,7 +85,7 @@ export const About = () => {
             </Box>
             <Box>Azamgarh U.P, India</Box>
           </Flex>
-        </Stack>
+        </Stack> */}
       </Box>
     </Stack>
     </Box>

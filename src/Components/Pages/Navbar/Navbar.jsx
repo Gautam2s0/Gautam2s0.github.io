@@ -1,4 +1,4 @@
-import { Box, Flex, Hide, Show, Spacer, Stack } from '@chakra-ui/react'
+import { Box, Flex, Hide, Show, Stack } from '@chakra-ui/react'
 import React from 'react'
 import "../../styles/navbar.css"
 import {Link} from "react-scroll"
@@ -28,7 +28,9 @@ export const Navbar = () => {
 
     return (
 
-        <Stack className='nvabs' direction={['column', 'column', "row", 'row']} w="100%" bg={["blue", "blue", "teal", `${color?"black":"transparent"}`]} color={["#fff", "yellow", "#fff", "#fff"]} cursor="pointer" h="4rem" position={"fixed"} top="0px" alignItems={"center"} fontFamily="Roboto Mono', monospace">
+        <Stack className='nvabs'
+         zIndex={"2"}
+        direction={['column', 'column', "row", 'row']} w="100%" bg={["blue", "blue", "teal", `${color?"black":"transparent"}`]} color={["#fff", "yellow", "#fff", "#fff"]} cursor="pointer" h="4rem" position={"fixed"} top="0px" alignItems={"center"} fontFamily="Roboto Mono', monospace">
             <Flex justifyContent={"space-between"} w="100%" display={["none", "none", "flex", "flex"]}>
                 <Link to="home" smooth={true}>
                     <Flex fontSize={"1.5rem"} align="center" ml="15%" _hover={{color:{sm:"teal",md:"pink",lg:"yellow",xl:"teal"}}}>
@@ -44,11 +46,9 @@ export const Navbar = () => {
                     <Box _hover={{ color: "red" }}><Link to="skill" smooth="true"  offset={-60}>Skills</Link></Box>
                     <Box _hover={{ color: "red" }}><Link to="project" smooth="true"  offset={-60}>Project</Link></Box>
                     <Box _hover={{ color: "red" }}><Link to="contact" smooth="true"  offset={-60}>Contact</Link></Box>
-                    <Box _hover={{ color: "red" }}><Link to="resume" smooth="true"  offset={-60}
-                    onClick={()=>{
-                        window.open(resume)
-                    }}
-                    >Resume</Link></Box>
+                    <Box _hover={{ color: "red" }}>
+                    <a href={resume} target="_blank" download="Gautam_Sonkar_Resume">Resume</a>
+                    </Box>
                     
 
                 </Stack>
@@ -77,9 +77,9 @@ export const Navbar = () => {
                     <Box _hover={{ color: "red" }} ><Link to="skill" smooth="true"  offset={0} onClick={handleClick}>Skills</Link></Box>
                     <Box _hover={{ color: "red" }}><Link to="project" smooth="true"  offset={0} onClick={handleClick}>Project</Link></Box>
                     <Box _hover={{ color: "red" }}><Link to="contact" smooth="true"  offset={160} onClick={handleClick}>Contact</Link></Box>
-                    <Box _hover={{ color: "red" }}><Link  onClick={()=>{
-                        window.open(resume)
-                    }}>Resume</Link></Box>
+                    <Box _hover={{ color: "red" }}>
+                    <a href={resume} download="Gautam_Sonkar_Resume">Resume</a>
+                    </Box>
                 </Stack>
             </Hide>
 

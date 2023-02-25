@@ -9,7 +9,7 @@ export const Project = () => {
       <Heading m="0% 0 4% 0" color={"#fff"} pt="1%">PROJECTS</Heading>
     <Grid
     templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(2, 1fr)']}
-   gap={["1%","1%","2%","4%"]}
+   gap={["1%","1%","4%","4%"]}
     justifyContent={"space-around"}
     >
       {

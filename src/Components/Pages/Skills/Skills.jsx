@@ -125,11 +125,12 @@ export const Skills = () => {
             backgroundColor={"#fff"}
           >
             <Heading
-              fontWeight={"500"}
+              fontWeight={"400"}
               fontStyle="oblique"
               fontFamily={"sans-serif"}
               mt="5%"
               mb="5%"
+              as={"h5"}
               borderBottom="2px solid blue"
             borderRightRadius={"50%"}
             borderLeftRadius="50%"
@@ -180,10 +181,16 @@ export const Skills = () => {
             borderRightRadius={"50%"}
             borderLeftRadius="50%"
             >
-              Version <Text>Control</Text>
+              <Text>Tools</Text>
             </Heading>
             <Stack spacing={["8%"]} p="0% 0% 10% 10%">
-              <Scard {...version} />;
+              {
+                version.map((el,i)=>{
+                  return(
+                    <Scard {...el} key={i} />
+                  )
+                })
+              }
             </Stack>
           </Stack>
         </Stack>

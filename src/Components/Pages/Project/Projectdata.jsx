@@ -8,8 +8,8 @@ import { FaHtml5, FaCss3Alt } from "react-icons/fa";
     {
       img:ainak,
       title:"Lenskart Clone",
-      github:"https://lenskartcom.netlify.app/",
-      demo:"https://github.com/akshay123332/fun-trees-7619",
+      demo:"https://lenskartcom.netlify.app/",
+      github:"https://github.com/akshay123332/fun-trees-7619",
       desc:"Lenskart is an Indian multinational optical prescription eyewear retail chain, based in Faridabad . This was a collaborative project buit by team of 5 members in 4 days.",
       language:[
         {
@@ -61,7 +61,7 @@ import { FaHtml5, FaCss3Alt } from "react-icons/fa";
         img:bluefly,
         github:"https://github.com/Saiprasaddabbe/Bluefly.com",
         title:"BlueFly Clone",
-        demo:"https://monsterindias.netlify.app/",
+        demo:"https://blueflys.netlify.app/",
         desc:" Bluefly is E-commerce shopping app. This was a group project. We have created these website with the help of HTML, CSS And Javascript.",
         language:[
             {
