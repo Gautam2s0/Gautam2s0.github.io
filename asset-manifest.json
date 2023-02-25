@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.90abba1d.css",
-    "main.js": "/static/js/main.caf3e3a3.js",
+    "main.js": "/static/js/main.5275d864.js",
     "static/media/bluefly.png": "/static/media/bluefly.fbd0c7bedcbc79ff798f.png",
     "static/media/fabbag.png": "/static/media/fabbag.10d16a1db6ea61b0736d.png",
     "static/media/Monster.png": "/static/media/Monster.5653129f49c7cf01923e.png",
     "static/media/Ainak.png": "/static/media/Ainak.30ca1eda6172eed2a9fb.png",
+    "static/media/Gautam Sonkar.png": "/static/media/Gautam Sonkar.23b612257b6c9c894fac.png",
     "static/media/Gautam Sonkar-resume.pdf": "/static/media/Gautam Sonkar-resume.8bc4f72150bc201c754d.pdf",
-    "static/media/Gautam Sonkar.jpeg": "/static/media/Gautam Sonkar.18a7a7136e3b757a5c40.jpeg",
     "index.html": "/index.html",
     "main.90abba1d.css.map": "/static/css/main.90abba1d.css.map",
-    "main.caf3e3a3.js.map": "/static/js/main.caf3e3a3.js.map"
+    "main.5275d864.js.map": "/static/js/main.5275d864.js.map"
   },
   "entrypoints": [
     "static/css/main.90abba1d.css",
-    "static/js/main.caf3e3a3.js"
+    "static/js/main.5275d864.js"
   ]
 }
