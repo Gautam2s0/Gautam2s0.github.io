@@ -58,11 +58,11 @@ const Front = [
       title: "ChakraUI",
       color:"teal"
     },
-    // {
-    //   logo: <SiReactrouter/>,
-    //   title: "React Router",
-    //   color:"tomato"
-    // },
+    {
+      logo: <SiReactrouter/>,
+      title: "React Router",
+      color:"tomato"
+    },
   ];
   const hosting=[
     
@@ -113,11 +113,11 @@ const Front = [
       title: "VsCode",
       color:"teal"
     },
-    // {
-    //   logo: <SiNpm />, 
-    //   title: "Npm",
-    //   color:"navy"
-    // },
+    {
+      logo: <SiNpm />, 
+      title: "Npm",
+      color:"navy"
+    },
     
   ]
   const database={

@@ -10,7 +10,7 @@ import { FaHtml5, FaCss3Alt } from "react-icons/fa";
       title:"Lenskart Clone",
       demo:"https://lenskartcom.netlify.app/",
       github:"https://github.com/akshay123332/fun-trees-7619",
-      desc:"Lenskart is an Indian multinational optical prescription eyewear retail chain, based in Faridabad . This was a collaborative project buit by team of 5 members in 4 days.",
+      desc:"Lenskart is an Indian multinational optical prescription eyewear retail chain, based in Faridabad . This was a collaborative project built by team of 5 members in 4 days.",
       language:[
         {
             logo: <SiJavascript />,

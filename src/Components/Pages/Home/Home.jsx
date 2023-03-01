@@ -71,7 +71,11 @@ export const Home = () => {
         <Stack>
         <Button rightIcon={<ArrowDownIcon/>} colorScheme='teal'  variant='solid' mt='2rem' _hover={{color:"red",bg:"black",shadow:"lg"}} shadow="lg">
           
-          <Link href={resume} download="Gautam_Sonkar_Resume" colorScheme='teal'  target='_blank' textDecoration={"none"}  _hover={{color:"red",bg:"black"}}>
+          <Link
+           onClick={()=>{
+            window.open("https://drive.google.com/file/d/1axU6Z7MoylN3FbQLXkbRQbehuAsaPuPT/view?usp=sharing")
+        }}
+          href={resume} download="Gautam_Sonkar_Resume" colorScheme='teal'  target='_blank' textDecoration={"none"}  _hover={{color:"red",bg:"black"}}>
         Resume
       </Link>
         </Button>

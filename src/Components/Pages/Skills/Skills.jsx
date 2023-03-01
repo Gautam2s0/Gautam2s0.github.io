@@ -17,7 +17,7 @@ export const Skills = () => {
     <Stack
       id="skill"
       className="fontStyle"
-      backgroundColor={"Highlight"}
+      backgroundColor={"#008B8B"}
       boxSizing="border-box"
       paddingBottom={["5%", "5%", "0", "0"]}
     >
@@ -52,7 +52,7 @@ export const Skills = () => {
             borderRightRadius={"50%"}
             borderLeftRadius="50%"
           >
-            Fontend
+            Frontend
           </Heading>
           <Stack spacing={["8%"]} p="0 0 10% 10%">
             {Front.map((el,i) => {

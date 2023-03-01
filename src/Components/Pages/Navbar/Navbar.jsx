@@ -30,6 +30,7 @@ export const Navbar = () => {
 
         <Stack className='nvabs'
          zIndex={"2"}
+         borderBottom={`${color?"2px solid pink":"transparent"}`}
         direction={['column', 'column', "row", 'row']} w="100%" bg={["blue", "blue", "teal", `${color?"black":"transparent"}`]} color={["#fff", "yellow", "#fff", "#fff"]} cursor="pointer" h="4rem" position={"fixed"} top="0px" alignItems={"center"} fontFamily="Roboto Mono', monospace">
             <Flex justifyContent={"space-between"} w="100%" display={["none", "none", "flex", "flex"]}>
                 <Link to="home" smooth={true}>
@@ -47,7 +48,11 @@ export const Navbar = () => {
                     <Box _hover={{ color: "red" }}><Link to="project" smooth="true"  offset={-60}>Project</Link></Box>
                     <Box _hover={{ color: "red" }}><Link to="contact" smooth="true"  offset={-60}>Contact</Link></Box>
                     <Box _hover={{ color: "red" }}>
-                    <a href={resume} target="_blank" download="Gautam_Sonkar_Resume">Resume</a>
+                    <a
+                    onClick={()=>{
+                        window.open("https://drive.google.com/file/d/1axU6Z7MoylN3FbQLXkbRQbehuAsaPuPT/view?usp=sharing")
+                    }}
+                     href={resume} target="_blank" download="fp04_194-Gautam-Sonkar-Resume">Resume</a>
                     </Box>
                     
 
@@ -78,7 +83,11 @@ export const Navbar = () => {
                     <Box _hover={{ color: "red" }}><Link to="project" smooth="true"  offset={0} onClick={handleClick}>Project</Link></Box>
                     <Box _hover={{ color: "red" }}><Link to="contact" smooth="true"  offset={160} onClick={handleClick}>Contact</Link></Box>
                     <Box _hover={{ color: "red" }}>
-                    <a href={resume} download="Gautam_Sonkar_Resume">Resume</a>
+                    <a 
+                    onClick={()=>{
+                        window.open("https://drive.google.com/file/d/1axU6Z7MoylN3FbQLXkbRQbehuAsaPuPT/view?usp=sharing")
+                    }}
+                    href={resume} download="Gautam_Sonkar_Resume">Resume</a>
                     </Box>
                 </Stack>
             </Hide>
