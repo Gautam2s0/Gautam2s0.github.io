@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Stack, Heading, Text, Button } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import { SiJavascript, SiRedux, SiChakraui, SiReact } from "react-icons/si";
-import { FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { Language } from "./Language";
 
 
