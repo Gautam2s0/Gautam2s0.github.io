@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.90abba1d.css",
-    "main.js": "/static/js/main.9d56b391.js",
+    "main.css": "/static/css/main.b13fc52c.css",
+    "main.js": "/static/js/main.0a7ca365.js",
     "static/media/bluefly.png": "/static/media/bluefly.fbd0c7bedcbc79ff798f.png",
     "static/media/fabbag.png": "/static/media/fabbag.10d16a1db6ea61b0736d.png",
     "static/media/Monster.png": "/static/media/Monster.5653129f49c7cf01923e.png",
@@ -9,11 +9,11 @@
     "static/media/Gautam Sonkar.png": "/static/media/Gautam Sonkar.c3dfb5033e9c6a43f70c.png",
     "static/media/Gautam Sonkar-resume.pdf": "/static/media/Gautam Sonkar-resume.8bc4f72150bc201c754d.pdf",
     "index.html": "/index.html",
-    "main.90abba1d.css.map": "/static/css/main.90abba1d.css.map",
-    "main.9d56b391.js.map": "/static/js/main.9d56b391.js.map"
+    "main.b13fc52c.css.map": "/static/css/main.b13fc52c.css.map",
+    "main.0a7ca365.js.map": "/static/js/main.0a7ca365.js.map"
   },
   "entrypoints": [
-    "static/css/main.90abba1d.css",
-    "static/js/main.9d56b391.js"
+    "static/css/main.b13fc52c.css",
+    "static/js/main.0a7ca365.js"
   ]
 }
