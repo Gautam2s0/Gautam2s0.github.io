@@ -83,7 +83,7 @@ import { SiJavascript, SiRedux, SiChakraui, SiReact, SiReactrouter, SiHtml5, SiC
       {
         img:ainak,
         title:"Lenskart Clone",
-        demo:"https://lenskartcom.netlify.app/",
+        demo:"https://ainak-five.vercel.app/",
         github:"https://github.com/akshay123332/fun-trees-7619",
         desc:"Lenskart is an Indian multinational optical prescription eyewear retail chain, based in Faridabad . This was a collaborative project built by team of 4 members in 4 days.",
         language:[
