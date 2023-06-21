@@ -1,10 +1,21 @@
-import { ArrowDownIcon } from '@chakra-ui/icons';
-import { Box, Flex, Heading, Link, Stack, Text ,Button} from '@chakra-ui/react'
-import React, { useState } from 'react'
-import { useEffect } from 'react';
+import { ArrowDownIcon } from "@chakra-ui/icons";
+import {
+  Box,
+  Flex,
+  Heading,
+  Link,
+  Stack,
+  Text,
+  Button,
+} from "@chakra-ui/react";
+import React, { useState } from "react";
+import { useEffect } from "react";
 import Typewriter from "typewriter-effect";
-import resume from "../../Docs/Gautam Sonkar-resume.pdf"
-import { images } from './Image';
+import resume from "../../Docs/Gautam Sonkar-resume.pdf";
+import { images } from "./Image";
+import style from "../../styles/Home.css";
+import gautam from "../../images/Gautam Sonkar.png";
+
 export const Home = () => {
   let i=0
   const [src,setSrc]=useState(images[i])
@@ -25,13 +36,16 @@ export const Home = () => {
 
   },[])
 
+  
 
   return (
-    <Stack className='fontStyle'
+    <Stack
+  
+      className="fontStyle"
       id="home"
-      dir='column'
+      dir="column"
       display={"flex"}
-      h={["100vh","100vh","75vh","150vh"]}
+      h={["100vh", "100vh", "75vh", "150vh"]}
       align="center"
       justifyContent={"center"}
       color={"#fff"}
@@ -42,47 +56,67 @@ export const Home = () => {
       backdropBrightness={"55%"}
       transition="background "
       backgroundColor="transparent"
-      mt={["4rem","4rem","4rem","-9rem"]}
-      >
+      mt={["4rem", "4rem", "4rem", "-9rem"]}
+      
+    >
       <Stack
-        dir='column'
+        dir="column"
         display={"flex"}
         justifyContent={"center"}
         align="center"
-        
+      >
+        <Flex
+          fontSize={["1rem", "2rem"]}
+          fontWeight={["400", "500"]}
+          gap="20px"
         >
-        <Flex fontSize={["1rem","2rem"]} fontWeight={["400","500"]} gap="20px" >
           <Box>Hi,</Box>
           <Box>I</Box>
           <Box>am</Box>
         </Flex>
-        <Heading fontSize={["2rem","5rem"]}   fontWeight={["400","600"]} >Gautam Sonkar</Heading>
-        <Text fontSize={["1rem","1.2rem","1.8rem","2rem"]} fontWeight={["400","500"]} >
-        <Typewriter
-          style={{ color: "red", lineHeight: "17px" }}
-          options={{
-            strings: ["A Full Stack Developer", "A MERN Stack Developer"],
-            autoStart: true,
-            loop: true,
-            deleteSpeed: 20
-          }}
-        />
+        <Heading fontSize={["2rem", "5rem"]} fontWeight={["400", "600"]}>
+          Gautam Sonkar
+        </Heading>
+        <Text
+          fontSize={["1rem", "1.2rem", "1.8rem", "2rem"]}
+          fontWeight={["400", "500"]}
+        >
+          <Typewriter
+            style={{ color: "red", lineHeight: "17px" }}
+            options={{
+              strings: ["A Full Stack Developer", "A MERN Stack Developer"],
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 20,
+            }}
+          />
         </Text>
         <Stack>
-        <Button rightIcon={<ArrowDownIcon/>} colorScheme='teal'  variant='solid' mt='2rem' _hover={{color:"red",bg:"black",shadow:"lg"}} shadow="lg">
-          
-          <Link
-           onClick={()=>{
-            window.open("https://drive.google.com/file/d/1axU6Z7MoylN3FbQLXkbRQbehuAsaPuPT/view?usp=sharing")
-        }}
-          href={resume} download="Gautam_Sonkar_Resume" colorScheme='teal'  target='_blank' textDecoration={"none"}  _hover={{color:"red",bg:"black"}}>
-        Resume
-      </Link>
-        </Button>
+          <Button
+            id="hbut"
+            rightIcon={<ArrowDownIcon />}
+            mt="2rem"
+            onClick={() => {
+              window.open(
+                "https://drive.google.com/file/d/1axU6Z7MoylN3FbQLXkbRQbehuAsaPuPT/view?usp=sharing"
+              );
+            }}
+          >
+            <Link
+              id="hlink"
+              href={resume}
+              download="Gautam_Sonkar_Resume"
+              colorScheme="teal"
+              target="_blank"
+              textDecoration={"none"}
+              _hover={{ textDecoration: "none" }}
+            >
+              Resume
+            </Link>
+            <Box id="hi"></Box>
+          </Button>
         </Stack>
-        
       </Stack>
-
     </Stack>
-  )
-}
+  );
+};

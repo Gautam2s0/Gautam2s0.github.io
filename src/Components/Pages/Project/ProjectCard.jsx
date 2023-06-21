@@ -5,6 +5,7 @@ import { SiJavascript, SiRedux, SiChakraui, SiReact } from "react-icons/si";
 import { FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { Language } from "./Language";
 
+
 export const ProjectCard = ({img,title,demo,github,desc,language}) => {
   const handleClick = (src) => {
     window.open(src);
@@ -12,7 +13,8 @@ export const ProjectCard = ({img,title,demo,github,desc,language}) => {
 
   return (
     <Box border={"transparent"}
-    transition="width 2s linear 1s"
+    className="pcard"
+    // transition="width 2s"
      pb="5%" m="auto" borderRadius="5%" boxSizing="border-box" backgroundColor={"#101010"} color="#ffff" h="100%" 
     
     _hover={{backgroundColor:"#202020",width:"105%"}}
