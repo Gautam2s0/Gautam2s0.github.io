@@ -5,36 +5,19 @@ import {
   Heading,
   Link,
   Stack,
-  Text,
   Button,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import resume from "../../Docs/Gautam Sonkar-resume.pdf";
 import { images } from "./Image";
 import style from "../../styles/Home.css";
-import gautam from "../../images/Gautam Sonkar.png";
 import Fade from "react-reveal/Fade";
 import Rotate from "react-reveal/Rotate";
 
 export const Home = () => {
-  let i = 0;
-  const [src, setSrc] = useState(images[i]);
-  const changeIndex = () => {
-    if (i === images.length - 1) {
-      i = 0;
-      setSrc(images[0]);
-    } else {
-      i++;
-      setSrc(images[i]);
-    }
-    return i;
-  };
-
-  useEffect(() => {
-    setInterval(changeIndex, 2000);
-  }, []);
+  const [src, setSrc] = useState(images[0]);
+  
 
   return (
     <Stack
@@ -55,6 +38,7 @@ export const Home = () => {
       backgroundColor="transparent"
       mt={["4rem", "4rem", "4rem", "-9rem"]}
     >
+      
       <Stack
         dir="column"
         display={"flex"}
@@ -78,7 +62,7 @@ export const Home = () => {
           </Heading>
         </Fade>
 
-        <Text
+        <Box
           fontSize={["1rem", "1.2rem", "1.8rem", "2rem"]}
           fontWeight={["400", "500"]}
         >
@@ -91,7 +75,7 @@ export const Home = () => {
               deleteSpeed: 20,
             }}
           />
-        </Text>
+        </Box>
 
         <Stack>
           <Rotate bottom right duration={2000}>
