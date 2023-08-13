@@ -9,6 +9,7 @@ export const Navbar = () => {
     const [click, setClick] = useState(false)
     const [display, setDisplay] = useState("none")
     const [color,setColor]=useState(false)
+
     const handleClick = () => {
         setClick(!click)
         setDisplay(display === "none" ? "flex" : "none")
@@ -41,7 +42,7 @@ export const Navbar = () => {
                         <Box>onkar</Box>
                     </Flex>
                 </Link>
-                <Stack direction={['column', 'column', "row", 'row']} spacing={["1", "1", "2rem", "rem"]} justifyContent={['flex-end', 'flex-end', 'flex-end', 'flex-end']} ml={["0", "0", "0%", "0%"]} fontSize={["0", "0", "1.2rem", "1.5rem"]} mr="5%" alignItems={"center"} >
+                <Stack direction={['column', 'column', "row", 'row']} spacing={["1", "1", "2rem", "rem"]} justifyContent={['flex-end', 'flex-end', 'flex-end', 'flex-end']} ml={["0", "0", "0%", "0%"]} fontSize={["0", "0", "1.2rem", "1.5rem"]} mr="5%" alignItems={"center"} color={color?"yellow":"#fff"} >
                     <Box _hover={{ color: "red" }}><Link to="home" smooth="true" offset={-60}>Home</Link></Box>
                     <Box _hover={{ color: "red" }}><Link to="about" smooth="true"  offset={-60}>About</Link></Box>
                     <Box _hover={{ color: "red" }}><Link to="skill" smooth="true"  offset={-60}>Skills</Link></Box>

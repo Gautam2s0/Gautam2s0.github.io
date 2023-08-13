@@ -39,7 +39,16 @@ export const Skills = () => {
           mb="10%"
           boxSizing="border-box"
           backgroundColor={"#fff"}
-          _hover={{ boxShadow: " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
+          
+          transition={"border-color 3s"}
+          // _hover={{ boxShadow: " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
+          _hover={
+            {
+
+             boxShadow:" rgba(0, 0, 0, 0.96) 0px 22px 70px 10px",
+             
+            }
+          }
         >
           <Heading
             fontWeight={"500"}
@@ -63,7 +72,7 @@ export const Skills = () => {
         <Stack className="BackendHosting" w={["100%", "100%", "30%", "30%"]}>
           <Stack
             className="Backend"
-            _hover={{ boxShadow: " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
+            _hover={{  boxShadow:" rgba(0, 0, 0, 0.96) 0px 22px 70px 10px",}}
             w="100%"
             boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}
             backgroundColor={"#fff"}
@@ -88,7 +97,7 @@ export const Skills = () => {
           </Stack>
           <Stack
             className="Hosting"
-            _hover={{ boxShadow: " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
+            _hover={{   boxShadow:" rgba(0, 0, 0, 0.96) 0px 22px 70px 10px",}}
             w="100%"
             boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}
             backgroundColor={"#fff"}
@@ -119,7 +128,7 @@ export const Skills = () => {
         >
           <Stack
             className="language"
-            _hover={{ boxShadow: " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
+            _hover={{  boxShadow:" rgba(0, 0, 0, 0.96) 0px 22px 70px 10px", }}
             boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}
             w="100%"
             backgroundColor={"#fff"}
@@ -143,7 +152,7 @@ export const Skills = () => {
           </Stack>
           <Stack
             className="database"
-            _hover={{ boxShadow: " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
+            _hover={{  boxShadow:" rgba(0, 0, 0, 0.96) 0px 22px 70px 10px",}}
             boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}
             w="100%"
             backgroundColor={"#fff"}
@@ -166,7 +175,7 @@ export const Skills = () => {
           </Stack>
           <Stack
             className="version"
-            _hover={{ boxShadow: " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" }}
+            _hover={{  boxShadow:" rgba(0, 0, 0, 0.96) 0px 22px 70px 10px", }}
             boxShadow={"rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}
             w="100%"
             backgroundColor={"#fff"}

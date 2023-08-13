@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Stack, Heading, Text, Button } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import { SiJavascript, SiRedux, SiChakraui, SiReact } from "react-icons/si";
@@ -16,7 +16,12 @@ export const ProjectCard = ({img,title,demo,github,desc,language}) => {
     // transition="width 2s"
      pb="5%" m="auto" borderRadius="5%" boxSizing="border-box" backgroundColor={"#101010"} color="#ffff" h="100%" 
     
-    _hover={{backgroundColor:"#202020",width:"105%"}}
+    
+    _hover={{
+      transform:"scale(1.1)",
+      transitionDuration:"1s",
+      opacity:.8
+    }}
     >
       <Stack w="90%" margin={"auto"} justifyContent="center">
         <Box className="ProjectImageBox"   >

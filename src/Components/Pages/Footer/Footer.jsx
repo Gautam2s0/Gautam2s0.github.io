@@ -31,10 +31,13 @@ const SocialButton = ({
       justifyContent={'center'}
       transition={'background 0.3s ease'}
       _hover={{
-        // bg: useColorModeValue('yellow', 'green'),
-        color:"#0D74FF"
-        //  bg: "#0D74FF" 
-      }}>
+        transform:"scale(1.1)",
+        transitionDuration:"1s",
+        opacity:.8,
+        color:"#0D74FF",
+         
+      }}
+      >
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
     </chakra.button>
@@ -74,6 +77,7 @@ export default function Footer() {
           >
             <SocialButton   label={'LinedIn'}>
               <FaLinkedinIn 
+              
               onClick={
                 ()=>{
                   HandleClick("https://www.linkedin.com/in/gautam-sonkar-330899199/")
@@ -90,7 +94,7 @@ export default function Footer() {
             <SocialButton label={'HackerRank'} >
               <FaHackerrank
               onClick={()=>{
-                HandleClick("https://github.com/Gautam2s0")
+                HandleClick("https://www.hackerrank.com/gautamsonkar334?hr_r=1")
               }}
                />
             </SocialButton>

@@ -123,7 +123,14 @@ const Contact = () => {
                       variant="ghost"
                       size="lg"
                       isRound={true}
-                      _hover={{ bg: "#0D74FF" }}
+                      _hover={{
+                        transform:"scale(1.2)",
+                        transitionDuration:"1s",
+                        opacity:.8,
+                        bg:"#0D74FF",
+                        // border:"5px solid red",
+                         
+                      }}
                       icon={<BsLinkedin size="28px" />}
                       onClick={() => {
                         HandleClick(
@@ -136,7 +143,14 @@ const Contact = () => {
                       variant="ghost"
                       size="lg"
                       isRound={true}
-                      _hover={{ bg: "#0D74FF" }}
+                      _hover={{
+                        transform:"scale(1.2)",
+                        transitionDuration:"1s",
+                        opacity:.8,
+                        bg:"#0D74FF",
+                        // border:"5px solid red",
+                         
+                      }}
                       icon={<BsGithub size="28px" />}
                       onClick={() => {
                         HandleClick("https://github.com/Gautam2s0");
@@ -147,7 +161,15 @@ const Contact = () => {
                       variant="ghost"
                       size="lg"
                       isRound={true}
-                      _hover={{ bg: "#0D74FF" }}
+                    
+                      _hover={{
+                        transform:"scale(1.2)",
+                        transitionDuration:"1s",
+                        opacity:.8,
+                        bg:"#0D74FF",
+                        // border:"5px solid red",
+                         
+                      }}
                       icon={<FaHackerrank size="28px" />}
                       onClick={() => {
                         HandleClick(
@@ -202,7 +224,7 @@ const Contact = () => {
                           variant="solid"
                           bg="#0D74FF"
                           color="white"
-                          _hover={{ backgroundColor: "#000", color: "red" }}
+                          _hover={{ backgroundColor: "#000", color: "red",transform:"scale(1)",transitionDuration:"2s" }}
                           onClick={handleButton}
                         >
                           Send Message
